@@ -13,5 +13,9 @@ First, you must have python and twilio-python installed.
 Second, pull down the project and setup the cron jobs.
 
     git clone git@github.com:adamdecaf/server-monitors.git
+    sudo su
     crontab -e
+
+    * * * * * python /path/to/server-monitors/disk-space.py
+    * * * * * python /path/to/server-monitors/free-memory.py
   
