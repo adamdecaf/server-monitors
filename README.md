@@ -2,6 +2,8 @@
 
 This is a collection of scripts (and cron jobs) to setup some basic monitoring of servers.
 
+Note: This is setup for the default amazon ami on an ec2 server. You may have to alter this to get it work perfectly on your server.
+
 # Install
 
 First, you must have python and twilio-python installed.
