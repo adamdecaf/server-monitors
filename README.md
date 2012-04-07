@@ -20,4 +20,5 @@ Second, pull down the project and setup the cron jobs.
 
     * * * * * python /path/to/server-monitors/disk-space.py
     * * * * * python /path/to/server-monitors/free-memory.py
+    * * * * * python /path/to/server-monitors/running-processes.py
   
