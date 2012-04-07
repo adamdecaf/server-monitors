@@ -15,6 +15,7 @@ First, you must have python and twilio-python installed.
 Second, pull down the project and setup the cron jobs.
 
     git clone git@github.com:adamdecaf/server-monitors.git
+    # Copy config.sample.py to config.py and update the values
     sudo su
     crontab -e
 
