@@ -31,5 +31,4 @@ def monitorProcess(processName):
 monitorProcess("httpd")
 monitorProcess("mysqld")
 monitorProcess("sshd")
-monitorProcess("fah6")
 monitorProcess("crond")
