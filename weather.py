@@ -7,7 +7,7 @@ from config import config
 import subprocess
 import os
 
-subprocess.call("wget -O " + config['weatherFile'] + " 'http://www.google.com/ig/api?weather=Cedar+Falls+Iowa';", shell=True)
+subprocess.call("wget -O " + config['weatherFile'] + " 'http://www.google.com/ig/api?weather=" + config['weatherCity'] + "';", shell=True)
 xmlFile = parse(config['weatherFile'])
 
 def getValue(elmName, attribute = "data"):

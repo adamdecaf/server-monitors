@@ -4,6 +4,8 @@
 config={}
 config["diskSpaceFilePath"] = "/tmp/disk-space"
 config["freeMemoryFilePath"] = "/proc/meminfo"
+config["weatherFile"] = "/tmp/weather"
+config["weatherCity"] = "" # Put +'s where spaces should go
 config["lowRootSpace"] = 2 * 1024 * 1024 # ~GB
 config["lowTmpSpace"] = 2 * 100 * 1024 # ~200MB
 config["lowFreeMemory"] = 7 * 1024 # 10MB
