@@ -1,4 +1,3 @@
-
 # Server Monitors
 # Adam Shannnon
 from twilio.rest import TwilioRestClient

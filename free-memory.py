@@ -26,10 +26,12 @@ if swapTotal > 0 or swapFree > 0 or memoryFree < config['lowFreeMemory']:
     memoryFree = str(memoryFree)
 
     # Create the free message
+    freeMsg += "Server: " + config['serverName'] + "\n"
     freeMsg += "total memory: " + memoryTotal + "\n"
     freeMsg += "free memory: " + memoryFree + "\n"
-    
+
     # Create the swap message
+    swapMsg += "Server: " + config['serverName'] + "\n"
     swapMsg += "total swap: " + swapTotal + "\n"
     swapMsg += "used swap: " + swapFree + "\n"
 
