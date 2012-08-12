@@ -12,10 +12,10 @@ for line in freeMemoryFile:
     freeMemoryFile[i] = line.split(" ")
     i += 1
 
-memoryTotal = int(freeMemoryFile[0][-2])
-memoryFree = int(freeMemoryFile[1][-2])
-swapTotal = int(freeMemoryFile[17][-2])
-swapFree = int(freeMemoryFile[18][-2])
+memoryTotal = int(freeMemoryFile[config["memoryTotal"]][config["spacesOffset"]])
+memoryFree = int(freeMemoryFile[config["memoryFree"]][config["spacesOffset"]])
+swapTotal = int(freeMemoryFile[config["swapTotal"]][config["spacesOffset"]])
+swapFree = int(freeMemoryFile[config["swapFree"]][config["spacesOffset"]])
 
 swapMsg = ""
 freeMsg = ""
