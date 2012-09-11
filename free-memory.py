@@ -39,7 +39,7 @@ if swapTotal > 0 or swapFree > 0 or memoryFree < config['lowFreeMemory']:
     p = os.popen("%s -t" % config['sendmail'], "w")
     p.write("To: " + config['email']  + "\n")
     p.write("From: " + config['emailFrom'] + "\n")
-    p.write("Subject: Warning: Low Memory (Amazon Box)\n\n")
+    p.write("Subject: Warning: Low Memory (" + config['serverName'] + ")\n\n")
     p.write(freeMsg + swapMsg)
     p.close()
 
