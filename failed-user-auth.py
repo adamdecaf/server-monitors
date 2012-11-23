@@ -20,6 +20,3 @@ p.write("Subject: [Security] " + config['serverName'] + " failed ssh logins\n\n"
 p.write("Failed logins: \n\n" + authMsg)
 p.close()
 
-
-
-
