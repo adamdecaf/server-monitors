@@ -5,6 +5,7 @@ config = {}
 config["diskSpaceFilePath"] = "/tmp/disk-space"
 config["freeMemoryFilePath"] = "/proc/meminfo"
 config['runningProcessesFilePath'] = "/tmp/running-processes"
+config['authLogFilePath'] = "/var/log/secure"
 
 config["weatherFile"] = "/tmp/weather"
 config["weatherCity"] = "" # Put +'s where spaces should go
