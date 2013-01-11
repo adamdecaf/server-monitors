@@ -10,7 +10,7 @@ authMsg = ""
 for line in authLogFile:
     if "invalid user" in line:
         # Add to the message
-        authMsg += line + "\n"
+        authMsg = line + "\n" + authMsg
 
 # Send through sendmail
 p = os.popen("%s -t" % config['sendmail'], "w")
